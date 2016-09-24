@@ -40,14 +40,16 @@
             this.WelcomeLabel.Location = new System.Drawing.Point(11, 9);
             this.WelcomeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.WelcomeLabel.Name = "WelcomeLabel";
-            this.WelcomeLabel.Size = new System.Drawing.Size(496, 55);
+            this.WelcomeLabel.Size = new System.Drawing.Size(479, 55);
             this.WelcomeLabel.TabIndex = 0;
-            this.WelcomeLabel.Text = "Welcome to my Code!";
+            this.WelcomeLabel.Text = "This is Splash screen";
+            this.WelcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.WelcomeLabel.Click += new System.EventHandler(this.WelcomeLabel_Click);
             // 
             // SplashFormTimer
             // 
             this.SplashFormTimer.Enabled = true;
-            this.SplashFormTimer.Interval = 3000;
+            this.SplashFormTimer.Interval = 4000;
             this.SplashFormTimer.Tick += new System.EventHandler(this.SplashFormTimer_Tick);
             // 
             // SplashForm
@@ -57,7 +59,7 @@
             this.ClientSize = new System.Drawing.Size(498, 206);
             this.Controls.Add(this.WelcomeLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SplashForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashForm";

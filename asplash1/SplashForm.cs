@@ -25,5 +25,10 @@ namespace asplash1
             startForm.Show();
             this.Hide();
         }
+
+        private void WelcomeLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
